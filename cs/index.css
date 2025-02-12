@@ -1,0 +1,86 @@
+body {
+    background-color: #2B2D40;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hotbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8AA4AF;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}
+
+button.hotbar-button, .toggle-button {
+    background-color: #8AA4AF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.hotbar-button:hover, .toggle-button:hover {
+    background-color: #6f8c9b;
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%; 
+    margin: 0 20px;
+    background-image: url('loho.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 10px;
+}
+
+.options-container {
+    position: absolute;
+    top: 80px; 
+    width: 100%;
+    background-color: #6f8c9b;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    visibility: visible;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.option-button {
+    background-color: #6f8c9b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.option-button:hover {
+    background-color: #4f6c7b;
+    transform: scale(1.1);
+}
+
+
+.options-container.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
