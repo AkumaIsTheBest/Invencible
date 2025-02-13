@@ -2,6 +2,7 @@ body {
     background-color: #2B2D40;
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 120px; /* Adicionando espaço suficiente para o conteúdo não ficar escondido */
 }
 
 .hotbar {
@@ -79,8 +80,22 @@ button.hotbar-button:hover, .toggle-button:hover {
     transform: scale(1.1);
 }
 
-
 .options-container.hidden {
     visibility: hidden;
     opacity: 0;
+}
+
+.hum{
+    color: aqua;
+    margin-left: 720px;
+}
+
+.fonte{
+    color: cyan;
+    font-size: 24px;
+}
+
+.gif{
+    width: 2133px;
+    height: 400px;
 }
