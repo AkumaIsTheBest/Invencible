@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             '../ims/invincible-fortnite.gif',
             '../ims/omni-man-pull-up.gif',
             '../ims/omniman-fortnite.gif',
-            '../ims/invincible-omniman1.gif',
+            '../ims/omnimanmeme.jpg',
             '../ims/yoshikage-kira-evil-smile.gif'
         ];
 
