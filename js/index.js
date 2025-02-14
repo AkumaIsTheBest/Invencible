@@ -17,13 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
    
-    gif.addEventListener('click', function() {
-   
+    function mudarimagem(){
         const gifs = [
             '../ims/invincible-fortnite.gif',
             '../ims/omni-man-pull-up.gif',
             '../ims/omniman-fortnite.gif',
-            '../ims/invincible-omniman.gif',
+            '../ims/invincible-omniman1.gif',
             '../ims/yoshikage-kira-evil-smile.gif'
         ];
 
@@ -35,5 +34,24 @@ document.addEventListener('DOMContentLoaded', function() {
         if (clickCount >= gifs.length) {
             clickCount = 0;  
         }
+    }
+   
+    let tempo = 2 * 1000;
+    let intevalID = setInterval(() => {
+        mudarimagem()
+        clickCount === 2 ? tempo = 10 : tempo = 2 * 1000;
+        console.log(tempo)
+
+        clearInterval(intevalID)
+        intevalID = setInterval(() => {
+            mudarimagem()
+            clickCount === 2 ? tempo = 10 : tempo = 2 * 1000
+            console.log(tempo)
+        }, tempo)
+        
+    }, tempo)
+    gif.addEventListener('click', function() {
+        mudarimagem()
+
     });
 });

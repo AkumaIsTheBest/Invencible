@@ -97,7 +97,7 @@ button.hotbar-button:hover, .toggle-button:hover {
 
 .gif{
     width: 2133px;
-    height: 560px;
+    height: 550px;
     opacity: 0;
     transition: opacity 2s;
 }
